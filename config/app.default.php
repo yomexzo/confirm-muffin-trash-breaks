@@ -220,7 +220,7 @@ return [
     'Datasources' => [
         'default' => [
             'className' => 'Cake\Database\Connection',
-            'driver' => 'Cake\Database\Driver\Mysql',
+            'driver' => 'Cake\Database\Driver\Sqlite',
             'persistent' => false,
             'host' => 'localhost',
             /**
@@ -231,7 +231,7 @@ return [
             //'port' => 'non_standard_port_number',
             'username' => 'my_app',
             'password' => 'secret',
-            'database' => 'my_app',
+            'database' => 'db',
             'encoding' => 'utf8',
             'timezone' => 'UTC',
             'flags' => [],
@@ -265,13 +265,13 @@ return [
          */
         'test' => [
             'className' => 'Cake\Database\Connection',
-            'driver' => 'Cake\Database\Driver\Mysql',
+            'driver' => 'Cake\Database\Driver\Sqlite',
             'persistent' => false,
             'host' => 'localhost',
             //'port' => 'non_standard_port_number',
             'username' => 'my_app',
             'password' => 'secret',
-            'database' => 'test_myapp',
+            'database' => 'db_test',
             'encoding' => 'utf8',
             'timezone' => 'UTC',
             'cacheMetadata' => true,
